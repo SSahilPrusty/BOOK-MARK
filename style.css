@@ -1,38 +1,78 @@
 *{
     padding: 0;
-    margin:0 ;
+    margin: 0;
 }
+
 body{
-    background-color: #ffe4c4;
+    background-color: #ACC8E5;
 }
+
 a:visited{
-    color: rgb(83, 19, 30);
+    color: rgb(57, 26, 120);
 }
+
 a:link{
     color: black;
 }
+
 a:hover{
     color: rgb(1, 14, 10);
     background-color: #6b4b24;
 }
+
 .slidebar{
     position: fixed;
     height: 100%;
-    padding-inline-end: 100%;
-    width: 20;
+    width: 200px;  /* Fixed: was "width: 20;" missing unit */
+    background-color: #68b0fd;  /* Added background so it's visible */
+    padding: 20px;  /* Fixed: removed padding-inline-end */
+    overflow-y: auto;  /* Added: for scrolling if needed */
 }
+
+.slidebar h2{
+    margin-bottom: 20px;
+    color:#fcfafa;
+    background-color: #010101;
+    text-align: center;
+}
+
+.slidebar ol{
+    list-style-position: inside;
+}
+
 .slidebar a{
     font-size: larger;
-    align-items: center;
     display: block;
-    padding-bottom: 20px;
+    padding: 10px 0;  /* Fixed: changed padding-bottom to padding */
+    text-decoration: none;
 }
-.content{
-    padding: 0px;
-    margin-left: 180px;
-}
-.content .slidebar.study.webpage.songs{
-    padding: 800px;
-    margin: 80px;
 
+.content {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+.content h1{
+    color: #112A46;
+    margin-bottom: 15px;
+}
+
+.content ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+.content ul li{
+    margin: 10px 0;
+}
+
+.content a{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.content img{
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
 }
